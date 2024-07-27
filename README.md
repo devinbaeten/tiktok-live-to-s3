@@ -1,5 +1,5 @@
 # TikTok Live to S3
-Automatically record TikTok Lives and sync them to a S3 bucket
+Automatically record TikTok Lives and sync them to a S3 bucket with Docker compose.
 
 Powered by [Docker](https://docker.com), [Michele0303/tiktok-live-recorder](https://github.com/Michele0303/tiktok-live-recorder), and [Rclone](https://rclone.org)
 

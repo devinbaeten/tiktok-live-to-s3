@@ -1,0 +1,15 @@
+# Ignore directory for video files
+/videos/
+
+# Rclone configuration file
+/rclone/rclone.conf
+
+# Python runtime files
+__pycache__/
+*.pyc
+
+# OS generated files
+.DS_Store
+
+# Local env
+.env

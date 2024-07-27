@@ -9,8 +9,8 @@ upload_files() {
 			if [ $? -eq 0 ]; then
 				echo "Successfully uploaded: $file"
 				echo "$(date): Successfully uploaded $file" >> /app/upload.log
-				# Check if the file was modified more than 1 hour ago and delete it if true
-				if [ $(find "$file" -mmin +60) ]; then
+				# Check if the file was modified more than 24 hours ago and delete it if true
+				if [ $(find "$file" -mmin +1440) ]; then
 					rm "$file"
 					echo "Deleted $file"
 				else

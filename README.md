@@ -29,3 +29,6 @@ Follow these steps to deploy this on your machine
 If you have issues with the TikTok recorder service, please refer to https://github.com/Michele0303/tiktok-live-recorder to troubleshoot any errors.
 
 If you have issues with something unrelated to the recording service, open an issue here.
+
+## Disclaimer
+This project is in no way affiliated with, authorized, maintained, sponsored or endorsed by TikTok or any of its affiliates or subsidiaries. Use at your own risk.

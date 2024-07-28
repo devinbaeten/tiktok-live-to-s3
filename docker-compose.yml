@@ -7,6 +7,7 @@ services:
       args:
         COOKIE: ${TIKTOK_COOKIE}
         TIMEZONE: ${TIMEZONE-:Etc/UTC}
+    restart: always
     volumes:
       - ./videos:/app/src/videos
     environment:

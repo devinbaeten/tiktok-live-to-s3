@@ -17,6 +17,7 @@ Store these in a .env file before building & running
 | `S3_ENDPOINT` | Your S3 Endpoint |
 | `S3_BUCKET_NAME` | The Name of the S3 bucket you wish to store the videos in |
 | `S3_ACL` | The ACL rule to apply for videos uploaded to the bucket |
+| `TIMEZONE` | The timezone to use when including timestamps in the filenames [List](https://www.iana.org/time-zones) |
 
 ## Deployment
 Follow these steps to deploy this on your machine

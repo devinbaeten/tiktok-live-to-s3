@@ -6,9 +6,11 @@ services:
       dockerfile: Dockerfile
       args:
         COOKIE: ${TIKTOK_COOKIE}
+        TIMEZONE: ${TIMEZONE-:Etc/UTC}
     volumes:
       - ./videos:/app/src/videos
     environment:
+      - TIMEZONE=${TIMEZONE-:Etc/UTC}
       - ROOM_ID=${TIKTOK_ROOM_ID}
       - COOKIE=${TIKTOK_COOKIE}
 

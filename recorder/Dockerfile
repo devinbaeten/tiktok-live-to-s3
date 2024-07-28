@@ -1,7 +1,8 @@
 FROM python:3.10-slim
 
 # Install git
-RUN apt-get update && apt-get install -y git ffmpeg jq
+RUN apt-get update && apt-get install -y git ffmpeg jq && \
+	ln -fs /usr/share/zoneinfo/${TZ} /etc/localtime
 
 # Clone the repository
 WORKDIR /app
@@ -15,6 +16,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN mkdir -p videos
 
 ARG COOKIE
+ARG TIMEZONE
+ENV TZ=${TIMEZONE}
 
 # Use jq to create the cookies.json file
 RUN echo '{"sessionid_ss": "", "tt-target-idc": "useast2a"}' | \
